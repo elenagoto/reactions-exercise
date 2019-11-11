@@ -1,0 +1,21 @@
+# Exercise: Scheduling and error handling
+
+## Reactions game
+
+This is an exercise for the course **Interactive web pages**. This is the second course of the EPFL Extension School's [Web Application Development Program](https://exts.epfl.ch/courses-programs/web-application-development).
+
+## Initial files
+
+The initial files include HTML, CSS and JavaScript. Most of the JavaScript functions have already been implemented in the `game.js` file. There is a marker `** Make your changes below **` as a comment in the file.
+
+## Tasks
+
+1. The function hideTheVisibleButton breaks if no element matching the query selector `.visible` is found. Add a `try / catch` statement to the function so that all of the contents are wrapped in the `try` block. Log the message `"Unable to find any visible buttons"` in the `catch` block that you've added and make sure that the interval now works correctly.
+
+2. Instead of using `displayRandomButton()` to start the game, set an interval that will start a new go every second, using `nextGo()`. *The error handling in task 1 is important here. If it is removed, the game will break with an error logged in the console*.
+
+3. Add a timer that will stop the game after two minutes by calling `stopTheGame()`.
+
+4. Finish the implementation of `stopTheGame()` so that it will stop the currently running interval, and hide the currently displayed game button.
+
+5. Add a button "Start the game" next to the button "Stop the game". This new button will call `startTheGame()` when it is clicked. Finish implementing `startTheGame()` so that it sets an interval that runs the game. But make sure that clicking the button does nothing *if* a game is in progress, i.e. *if* there is an interval running!
