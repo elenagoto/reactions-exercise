@@ -86,7 +86,10 @@ const hideTheVisibleButton = function() {
     console.log('Unable to find any visible buttons');
   }
   // let button = document.querySelector('.visible');
-  // button.className = 'button flash';
+  // if (button) {
+  //   // let button = document.querySelector('.visible');
+  //   button.className = 'button flash';
+  // }
 };
 
 
